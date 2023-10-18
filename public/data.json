@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Amazon",
+      "image": "https://i.ibb.co/tb5ZBY8/card1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Walmart",
+      "image": "https://i.ibb.co/GvYbxW5/card2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Alibaba",
+      "image": "https://i.ibb.co/GRYzBxM/card3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "eBay",
+      "image": "https://i.ibb.co/qj5LbnQ/card4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Target",
+      "image": "https://i.ibb.co/GJXxt4d/card5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Best Buy",
+      "image": "https://i.ibb.co/CHKNjF9/card6.jpg"
+    }
+  ]
+  
