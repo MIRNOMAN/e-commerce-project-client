@@ -4,6 +4,7 @@ import BrandCard from "../../Components/BrandCard/BrandCard";
 import ChooseUs from "../../Components/ChooseUs/ChooseUs";
 import ProductInfo from "../../Components/ProductInfo/ProductInfo";
 import Slider from "../../Components/Slider/Slider";
+import { useLoaderData } from "react-router-dom";
 
 
 const Home = () => {
@@ -15,6 +16,10 @@ const Home = () => {
         .then(res => res.json())
         .then(data => setDatas(data))
     },[])
+   
+    const cards = useLoaderData();
+    console.log(cards)
+
     return (
         <div>
            <Banner></Banner>
