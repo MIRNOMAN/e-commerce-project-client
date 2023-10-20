@@ -14,7 +14,7 @@ const DetailsPage = () => {
     const {brand_name, name, type, price, rating, description,photo} = data;
     const cardProduct = {brand_name, name, type, price, rating, description,photo}
     const handleAddToCard = () =>{
-        fetch('http://localhost:5000/cart/',{
+        fetch('https://e-commerce-project-server-smoky.vercel.app/cart/',{
             method: 'POST',
             headers :{
                'content-type': 'application/json'

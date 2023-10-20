@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 const BrandCard = ({ data }) => {
 
+    console.log(data)
+
     const { brand_name, image } = data;
     return (
         <div>

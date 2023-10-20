@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.jpg"
+import logo from "../../assets/logo3-removebg-preview.png"
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
@@ -41,7 +41,7 @@ const Navber = () => {
                 </ul>
                 </div>
                 <div className="lg:flex items-center">
-                  <img className="h-20 w-20" src={logo} alt="" />
+                  <img className="h-12 w-12" src={logo} alt="" />
                 <p className="  lg:text-3xl font-bold"><span className="text-blue-400">E-comme</span>rce</p>
                 </div>
             </div>

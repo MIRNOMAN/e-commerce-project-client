@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             {
                 path:"/cards/:brand_name",
                 element:<PrivateRoute><EcommercePage></EcommercePage></PrivateRoute>,
-                loader : ({params}) => fetch(`http://localhost:5000/cards/${params.brand_name}`)
+                loader : ({params}) => fetch(`https://e-commerce-project-server-smoky.vercel.app/cards/${params.brand_name}`)
             },
             {
                 path: "/addProducts",
@@ -37,23 +37,23 @@ const router = createBrowserRouter([
             },
             {
                 path: "/register",
-                element:<Register></Register>
+                element:<PrivateRoute><Register></Register></PrivateRoute>
             },
             {
               path: "/myCard",
-              element: <MyCard></MyCard>,
-              loader: () => fetch("http://localhost:5000/cart/")
+              element: <PrivateRoute><MyCard></MyCard></PrivateRoute>,
+              loader: () => fetch("https://e-commerce-project-server-smoky.vercel.app/cart/")
               
             },
             {
                 path: "/details/:_id",
                 element:<PrivateRoute><DetailsPage></DetailsPage></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/details/${params._id}`)
+                loader: ({params}) => fetch(`https://e-commerce-project-server-smoky.vercel.app/details/${params._id}`)
             },
             {
                 path:"/updates/:_id",
-                element:<UpdateCard></UpdateCard>,
-                loader: ({params}) => fetch(`http://localhost:5000/updates/${params._id}`)
+                element:<PrivateRoute><UpdateCard></UpdateCard></PrivateRoute>,
+                loader: ({params}) => fetch(`https://e-commerce-project-server-smoky.vercel.app/updates/${params._id}`)
             },
             
         ]

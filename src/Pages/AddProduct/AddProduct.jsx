@@ -16,7 +16,7 @@ const AddProduct = () => {
          const newUser = {brand_name, name, type, price, rating, description,photo}
          
           console.log(newUser)
-         fetch('http://localhost:5000/cards',{
+         fetch('https://e-commerce-project-server-smoky.vercel.app/cards',{
             method: 'POST',
             headers :{
                'content-type': 'application/json'
@@ -54,29 +54,29 @@ const AddProduct = () => {
              </div>
              </div>
              <div className="md:flex mt-4">
-             <div className="w-1/2 mr-5">
+             <div className="lg:w-1/2 ">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
                 <input type="text" name="name" className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=" Name " required />
              </div>
 
-             <div className="w-1/2">
+             <div className="lg:w-1/2 lg:ml-4">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Type</label>
                 <input type="text" name="type" className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type of  " required />
              </div>
              </div>
              <div className="md:flex mt-4">
-             <div className="w-1/2 mr-5">
+             <div className="lg:w-1/2 ">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
                 <input type="number" name="price" className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter price " required />
              </div>
 
-             <div className="w-1/2">
+             <div className="lg:w-1/2 lg:ml-4">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Rating</label>
                 <input type="number" name="rating" className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Rating" required />
              </div>
              </div>
              <div className="md:flex mt-4">
-             <div className="w-full">
+             <div className="lg:w-full">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Short Description</label>
                 <input type="text" name="description" className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Short description " required />
              </div>
