@@ -37,7 +37,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/register",
-                element:<PrivateRoute><Register></Register></PrivateRoute>
+                element:<Register></Register>
             },
             {
               path: "/myCard",
