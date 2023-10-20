@@ -5,7 +5,7 @@ import Footer from "../Components/Footer/Footer";
 
 const Main = () => {
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <div className="max-w-5xl mx-auto">
             <Navber></Navber>
             </div>

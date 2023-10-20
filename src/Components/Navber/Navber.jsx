@@ -40,9 +40,9 @@ const Navber = () => {
                     {navLinks}
                 </ul>
                 </div>
-                <div className="flex items-center">
+                <div className="lg:flex items-center">
                   <img className="h-20 w-20" src={logo} alt="" />
-                <p className="  text-3xl font-bold"><span className="text-blue-400">E-comme</span>rce</p>
+                <p className="  lg:text-3xl font-bold"><span className="text-blue-400">E-comme</span>rce</p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">

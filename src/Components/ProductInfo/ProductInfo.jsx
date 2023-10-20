@@ -3,8 +3,8 @@ import { FaArrowAltCircleRight,FaDesktop,FaChartLine,FaCoins,FaEnvelopeOpenText 
 
 const ProductInfo = () => {
     return (
-        <div className="h-[500px] flex shadow-lg ">
-            <div className="w-1/2 p-5 pt-7">
+        <div className="lg:h-[500px] lg:flex shadow-lg ">
+            <div className="lg:w-1/2 p-5 pt-7">
              <div data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-duration="1500">
@@ -46,7 +46,7 @@ const ProductInfo = () => {
               </div>
              </div>
             </div>
-            <div className="w-1/2 flex justify-center items-center">
+            <div className="lg:w-1/2 flex justify-center items-center">
                
               <img className=" rounded-full h-[350px]" src={picture} alt="" />
             </div>
