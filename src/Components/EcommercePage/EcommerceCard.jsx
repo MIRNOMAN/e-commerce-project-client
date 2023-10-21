@@ -40,7 +40,7 @@ const EcommerceCard = ({ brands }) => {
                         </Link>
 
                         <Link to={`/updates/${_id}`}>
-                        <button type="button" className="text-white  justify-center mt-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 flex items-center mb-2">Update <FaArrowAltCircleRight className="ml-2"></FaArrowAltCircleRight></button>
+                            <button type="button" className="text-white  justify-center mt-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 flex items-center mb-2">Update <FaArrowAltCircleRight className="ml-2"></FaArrowAltCircleRight></button>
                         </Link>
                     </div>
 

@@ -17,7 +17,7 @@ const Home = () => {
             .then(data => setDatas(data))
     }, [])
 
-    
+
     console.log(datas)
 
     return (
@@ -27,7 +27,7 @@ const Home = () => {
                 <h1 className="text-4xl text-center mt-16 font-bold">E-commerce <span className="text-blue-400">Categories</span></h1>
                 <div className="mt-12 grid px-6 grid-cols-1 lg:grid-cols-3  gap-5">
                     {
-                      datas &&  datas.map(data => <BrandCard key={data._id} data={data}></BrandCard>)
+                        datas && datas.map(data => <BrandCard key={data._id} data={data}></BrandCard>)
                     }
                 </div>
             </div>

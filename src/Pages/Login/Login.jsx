@@ -9,15 +9,16 @@ const Login = () => {
     const {signIn,googleSignIn} = useContext(AuthContext)
    const location = useLocation();
    const navigate = useNavigate();
-
+   
    const handleGoogle = () =>{
     googleSignIn()
     .then(result => {
         console.log(result.user)
+        
         navigate('/')
      navigate(location?.state ? location.state : '/');
     })
-    .then(err => {
+    .catch(err => {
         console.log(err)
     })
    }
@@ -29,16 +30,15 @@ const Login = () => {
      const email = form.get('email');
      const password = form.get('password');
      toast("successfully logged in")
-
-     
      signIn(email,password)
-     .then(result => {
-        console.log(result.user)
-      
+     .then((result) => {
+     console.log(result.user)
+     
+       
      navigate('/')
      navigate(location?.state ? location.state : '/');
      
-
+     
      })
      .catch(Error => {
       console.log(Error)
