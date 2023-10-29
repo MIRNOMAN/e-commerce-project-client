@@ -1,18 +1,22 @@
 
+import { useContext } from "react";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 
 const DetailsPage = () => {
 
     const data = useLoaderData();
+    const {user} = useContext(AuthContext);
+    const email = user.email;
 
     console.log(data);
 
     const { brand_name, name, type, price, rating, description, photo } = data;
-    const cardProduct = { brand_name, name, type, price, rating, description, photo }
+    const cardProduct = {email, brand_name, name, type, price, rating, description, photo }
     const handleAddToCard = () => {
         fetch('https://e-commerce-project-server-smoky.vercel.app/cart/', {
             method: 'POST',

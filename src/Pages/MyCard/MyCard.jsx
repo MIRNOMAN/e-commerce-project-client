@@ -1,12 +1,20 @@
 import { useLoaderData } from "react-router-dom";
 import CardCatagoris from "./CardCatagoris";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const MyCard = () => {
     const valuesProduct = useLoaderData();
+    const {user} = useContext(AuthContext);
 
-    const [values, setValues] = useState(valuesProduct)
+    const [values, setValues] = useState([])
+
+    useEffect(() => {
+     const validUser = valuesProduct.filter(product => product.email === user.email)
+     setValues(validUser)
+    },[valuesProduct, user.email])
 
     console.log(values)
     return (
