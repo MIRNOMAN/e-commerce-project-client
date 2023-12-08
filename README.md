@@ -1,8 +1,7 @@
-# React + Vite
+## Project Feature
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Allow users to create accounts on your e-commerce platform by providing necessary information such as name, email, and password.
+- Enable users to add products to a virtual shopping cart for easy management 
+- Ensure that your e-commerce platform is responsive and accessible across various devices, including desktops, tablets, and smartphones.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
